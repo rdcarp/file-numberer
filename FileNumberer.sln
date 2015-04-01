@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.Lib", "FileNumberer.Lib\FileNumberer.Lib.csproj", "{35C2BC4C-8E00-4D90-993C-D9D946902CDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.WinFormApp", "FileNumberer.WinFormApp\FileNumberer.WinFormApp.csproj", "{1FC683DF-D958-448C-B5EB-D67483337759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.CLI", "FileNumberer.Console\FileNumberer.CLI.csproj", "{07A3C4EC-5D97-4C37-83AD-7643E2658E64}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1FC683DF-D958-448C-B5EB-D67483337759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FC683DF-D958-448C-B5EB-D67483337759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FC683DF-D958-448C-B5EB-D67483337759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07A3C4EC-5D97-4C37-83AD-7643E2658E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07A3C4EC-5D97-4C37-83AD-7643E2658E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07A3C4EC-5D97-4C37-83AD-7643E2658E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07A3C4EC-5D97-4C37-83AD-7643E2658E64}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
