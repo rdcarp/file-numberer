@@ -14,7 +14,7 @@ namespace FileNumberer.CLI
     {
         static void Main(string[] args)
         {
-            Args fnArgs = ParseArgs(args);
+            FileNumbererArgs fnArgs = ParseArgs(args);
 
             // todo: remove clash of class and namespace
             Lib.FileNumberer fn = new Lib.FileNumberer(fnArgs);
@@ -22,9 +22,9 @@ namespace FileNumberer.CLI
             fn.Process();
         }
 
-        private static Args ParseArgs(string[] args)
+        private static FileNumbererArgs ParseArgs(string[] args)
         {
-            var parser = new FluentCommandLineParser<Args>();
+            var parser = new FluentCommandLineParser<FileNumbererArgs>();
             
             parser.Setup<List<string>>(arg => arg.Directories)
                 .As('d', "dirs")

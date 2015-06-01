@@ -6,10 +6,10 @@ namespace FileNumberer.Lib
 {
     public class FileNumberer
     {
-        Args args;
+        FileNumbererArgs args;
         FileSequencer sequencer;
 
-        public FileNumberer(Args args)
+        public FileNumberer(FileNumbererArgs args)
         {
             this.args = args;
             this.sequencer = SequencerFactory.GetSequencer(args.Method);

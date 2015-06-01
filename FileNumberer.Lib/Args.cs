@@ -2,7 +2,7 @@
 
 namespace FileNumberer.Lib
 {
-    public class Args
+    public class FileNumbererArgs
     {
         public string Prefix { get; set; }
         public string Suffix { get; set; }
