@@ -39,7 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Args.cs" />
+    <Compile Include="FileNumbererArgs.cs" />
     <Compile Include="FileNumberer.cs" />
     <Compile Include="Sequencers\AlphabeticalSequencer.cs" />
     <Compile Include="Sequencers\FileSequencer.cs" />
