@@ -1,17 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using FileNumberer.Lib.Sequencers;
+using FileNumberer.Lib.FileNamers;
 
 namespace FileNumberer.Lib
 {
     public class FileNumberer
     {
+        IFileNamer fileNamer;
         FileNumbererArgs args;
         FileSequencer sequencer;
 
         public FileNumberer(FileNumbererArgs args)
         {
             this.args = args;
+            this.fileNamer = new DefaultFileNamer();
             this.sequencer = SequencerFactory.GetSequencer(args.Method);
             this.sequencer.IncludeDirs(args.Directories.ToArray());
         }
@@ -29,13 +32,8 @@ namespace FileNumberer.Lib
                     Directory.CreateDirectory(args.Target);
                 }
 
-                File.Copy(file, Path.Combine(args.Target, GenerateName(counter++)) + fi.Extension);
+                File.Copy(file, Path.Combine(args.Target, fileNamer.GetName(counter++) + fi.Extension));
             }
-        }
-
-        private string GenerateName(int number)
-        {
-            return string.Format("{0}{1}{2}", args.Prefix, number, args.Suffix);
         }
     }
 }

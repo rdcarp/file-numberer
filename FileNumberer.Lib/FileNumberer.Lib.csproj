@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FileNamers\DefaultFileNamer.cs" />
+    <Compile Include="FileNamers\IFileNamer.cs" />
     <Compile Include="FileNumbererArgs.cs" />
     <Compile Include="FileNumberer.cs" />
     <Compile Include="Sequencers\AlphabeticalSequencer.cs" />
