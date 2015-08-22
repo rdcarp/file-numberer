@@ -18,7 +18,7 @@ namespace FileNumberer.Lib
 
         public void Process()
         {
-            List<string> files = this.sequencer.Process();
+            List<string> files = this.sequencer.Process(args.Recurse);
 
             int counter = args.StartNumber ;
             foreach (string file in files)

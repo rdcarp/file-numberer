@@ -24,6 +24,6 @@ namespace FileNumberer.Lib.Sequencers
             }
         }
 
-        internal abstract List<string> Process();
+        internal abstract List<string> Process(bool recurse);
     }
 }
