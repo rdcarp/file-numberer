@@ -16,10 +16,13 @@ namespace FileNumberer.CLI
         {
             FileNumbererArgs fnArgs = ParseArgs(args);
 
-            // todo: remove clash of class and namespace
-            Lib.FileNumberer fn = new Lib.FileNumberer(fnArgs);
+            if (fnArgs != null)
+            {
+                // todo: remove clash of class and namespace
+                Lib.FileNumberer fn = new Lib.FileNumberer(fnArgs);
 
-            fn.Process();
+                fn.Process();
+            }
         }
 
         private static FileNumbererArgs ParseArgs(string[] args)
@@ -63,20 +66,21 @@ namespace FileNumberer.CLI
                 .WithDescription("Start file numbering from this number")
                 .SetDefault(1);
 
-            ICommandLineParserResult result = parser.Parse(args);
+            parser.SetupHelp("?", "help")
+                .Callback(text => Console.WriteLine(text));
 
-            if (result.HasErrors)
+            ICommandLineParserResult result = parser.Parse(args);
+            FileNumbererArgs parsedArgs = parser.Object;
+
+            if (result.HasErrors || result.HelpCalled)
             {
                 Console.WriteLine(result.ErrorText);
-                // todo: correct this exception type
-                throw new NotImplementedException();
-            }
-            if (result.HelpCalled)
-            {
-                throw new NotImplementedException("No help has been implemented");
+                Console.WriteLine("Use --help to display help information");
+
+                parsedArgs = null;
             }
 
-            return parser.Object;
+            return parsedArgs;
         }
     }
 }
