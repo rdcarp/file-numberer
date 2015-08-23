@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\AssemblyVersionInfo.cs" />
     <Compile Include="Folder.cs">
       <SubType>UserControl</SubType>
     </Compile>

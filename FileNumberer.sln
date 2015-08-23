@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.Lib", "FileNumberer.Lib\FileNumberer.Lib.csproj", "{35C2BC4C-8E00-4D90-993C-D9D946902CDE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.WinFormApp", "FileNumberer.WinFormApp\FileNumberer.WinFormApp.csproj", "{1FC683DF-D958-448C-B5EB-D67483337759}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.CLI", "FileNumberer.Console\FileNumberer.CLI.csproj", "{07A3C4EC-5D97-4C37-83AD-7643E2658E64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AC07016-17C2-40DD-BF8E-A5E4B4EE08C8}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\AssemblyVersionInfo.cs = Solution Items\AssemblyVersionInfo.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
