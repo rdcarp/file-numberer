@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileNumberer.Lib", "FileNumberer.Lib\FileNumberer.Lib.csproj", "{35C2BC4C-8E00-4D90-993C-D9D946902CDE}"
 EndProject
@@ -12,6 +12,13 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AC07016-17C2-40DD-BF8E-A5E4B4EE08C8}"
 	ProjectSection(SolutionItems) = preProject
 		Solution Items\AssemblyVersionInfo.cs = Solution Items\AssemblyVersionInfo.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{E02028DB-B80A-41F8-AAF3-01DC471C467E}"
+	ProjectSection(SolutionItems) = preProject
+		Solution Items\.nuget\NuGet.Config = Solution Items\.nuget\NuGet.Config
+		Solution Items\.nuget\NuGet.exe = Solution Items\.nuget\NuGet.exe
+		Solution Items\.nuget\NuGet.targets = Solution Items\.nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
@@ -35,5 +42,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E02028DB-B80A-41F8-AAF3-01DC471C467E} = {6AC07016-17C2-40DD-BF8E-A5E4B4EE08C8}
 	EndGlobalSection
 EndGlobal
